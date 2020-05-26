@@ -88,8 +88,36 @@ public static int findDuplicate(int[] nums) {
 
   到达P点的时候让快慢指针继续走 ,等到下次相遇慢指针走过的距离就是 环长度c
 
+## 代码对比
+
+```java
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int slow = 0, fast = 0;
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
+        slow = 0;
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        return slow;
+    }
+}
+```
+
+仔细来看 我的代码比官方代码罗嗦了很多 , 因为最早的时候 我下意识使用了a[0]=1这种匹配规则 ,虽然后来有意识到a[1]=1进行匹配更简单 , 但是部分逻辑已经没有再次优化 .另外 这段代码使用do while进行开满指针 赛跑 , 我则是使用了while do , 又啰嗦了一下. 最后的时候 我是判断有没有环 ,如果没有 就直接跳出 ,而上述代码是把两种情况合并了 , 我觉得这里还是尽量分开 .增加代码可读性
+
 ## 总结
 
 其实 ,技术真的是要靠不断积累的 , 这个题 也把好多我之前遇到的知识点都串在一起了 . 另外还有一点就是 , 千万不要眼高手低 ,改自己动手总结一定要自己动手. 推断入环点的时候 ,我思考了至少 4,5个小时 ,如果当初我读那本书再多较真一些 也会轻松很多 .不过 最后结局还是好的 自己实现了AC
 
 ![leet-code](leet-code.png)
+
+## 关联题目
+
+*  [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+
+* [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/huan-xing-lian-biao-ii-by-leetcode/)
