@@ -64,9 +64,9 @@
 
 - [ ]  [5188. 树节点的第 K 个祖先](https://leetcode-cn.com/problems/kth-ancestor-of-a-tree-node/)
 
-- [ ]  [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+- [x]  [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
 
-  思考更优解答方式
+  没有很好的方法 , 复杂度都是基于O(n²) , 我想用二分法反而增加了复杂度 . 不过一些细节可以优化 , 比如去重, 记录上次的边界
 
 - [ ]  [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 
