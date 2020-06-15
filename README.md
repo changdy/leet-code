@@ -104,7 +104,7 @@
 
   复杂度不理想
 
-## 待写文档
+### 待写文档
 
 - [ ]  [1449. 数位成本和为目标值的最大数字](https://leetcode-cn.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)
 
