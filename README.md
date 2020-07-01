@@ -76,33 +76,50 @@
 
   被一个简单题虐了N遍. 
 
-- [ ]  [560. 和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+- [x]  [560. 和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 
-  只用了暴力实现 ,前缀和也需要尝试下
+  只用了暴力实现 ,前缀和也需要尝试下 ; 其实就是[437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/) 拆出来的问题.
 
 - [ ]  [1456. 定长子串中元音的最大数目](https://leetcode-cn.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 
   复杂度不理想
 
-- [ ]  [5437. 不同整数的最少数目](https://leetcode-cn.com/problems/least-number-of-unique-integers-after-k-removals/)
+- [x] [5437. 不同整数的最少数目](https://leetcode-cn.com/problems/least-number-of-unique-integers-after-k-removals/)
 
-  复杂度不理想
+  复杂度不理想 
+
+  思路大体上没问题 , 但是其中存在很多的优化空间
 
 - [ ]  [1466. 重新规划路线](https://leetcode-cn.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
 
   复杂度不理想
 
-- [ ]  [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
+- [x] [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
 
   复杂度不理想
 
-- [ ]  [1471. 数组中的 k 个最强值](https://leetcode-cn.com/problems/the-k-strongest-values-in-an-array/)
+  很典型的拓扑排序, 不过优化后的dfs 其实也可以实现. 不过理解起来需要耗费一点精力
+
+- [x] [1471. 数组中的 k 个最强值](https://leetcode-cn.com/problems/the-k-strongest-values-in-an-array/)
 
   复杂度不理想
 
-- [ ]  [1457. 二叉树中的伪回文路径](https://leetcode-cn.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)
+  先要排序 ,其次要思考left和right指针的关系 :`arr[left]<=arr[right]` 所以不需要使用绝对值判断.
+
+- [x]  [1457. 二叉树中的伪回文路径](https://leetcode-cn.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)
 
   复杂度不理想
+  
+  利用了位运算, 
+  
+- [ ] [1477. 找两个和为目标值且不重叠的子数组](https://leetcode-cn.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)
+
+- [ ] [1478. 安排邮筒](https://leetcode-cn.com/problems/allocate-mailboxes/)
+
+- [ ] [1473. 给房子涂色 III](https://leetcode-cn.com/problems/paint-house-iii/)
+
+- [ ]  [1458. 两个子序列的最大点积](https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences/)
+
 
 ### 待写文档
 
